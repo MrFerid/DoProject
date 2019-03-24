@@ -1,0 +1,518 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --primary-color: #fc7f0c;
+    --green-color: #31c2b1;
+    --gray-color: rgb(104, 104, 104);
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p{
+    font-size: .8rem;
+    color: rgb(104, 104, 104);
+}
+
+a:hover{
+    text-decoration: none;
+    color: #fc7f0c;
+}
+
+section{
+    padding: 2.95rem 0;
+    position: relative;
+}
+
+/* --------------- Header -------------- */
+header{
+    font-size: .75rem;
+    font-weight: 600;
+    transition: all .5s ease 0s;
+}
+
+.contact{
+    background: #31c2b1b7;
+    color: #fff;
+    transition: all .1s ease 0s;
+}
+
+.contact a{
+    color: #fff;
+}
+
+.logo{
+    width: 100%;
+}
+
+header .navbar{
+    padding: 0;
+}
+
+.is-sticky{
+    position: fixed;
+    top:0;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.589);
+    width: 100%;
+}
+
+header nav>i{
+    cursor: pointer;
+    color: rgb(194, 194, 194);
+}
+
+.navbar-nav li a{
+    padding: 1.1rem!important;
+}
+
+.navbar-nav li a:hover,.active a {
+    color: #fc7f0c!important;
+}
+
+.navbar-nav li ul{
+    padding: 1.3rem;
+    margin:0;
+    margin-top: 1.5rem;
+    list-style: none;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.747);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease 0s;
+}
+
+.navbar-nav li ul li{
+    padding: .5rem 0!important;
+}
+
+.navbar-nav li ul li a{
+    font-size: .75rem;
+    text-transform: capitalize;
+    color: rgb(136, 136, 136);    
+}
+
+.navbar-nav li:hover >ul{
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* -------------------     Slider section ( Farid Slider fSlider) -------------- */
+.slider-section{
+    padding: 0;
+}
+
+.fSlider-footer a+a{
+    margin-left: 1rem;
+}
+
+/* Css of slider is in fSlider.css */
+
+/* ----------------- Services section -----------------  */
+
+.service{
+    text-align: center;
+}
+
+.service h1{
+    font-size: .9rem;
+    margin: 1.3rem 0;
+}
+
+.service .circle-icon{
+    transition: all .3s ease 0s;
+}
+
+.service:hover > .circle-icon{
+    background: #fc7f0c;
+    color: #fff;
+}
+
+/* ---------------  Extra section  ------------------  */
+.extra-section{
+    padding: 5.9rem 0;
+}
+
+.extra-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.extra-content p{
+  
+}
+
+.extra-content ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+
+.extra-content ul li i{
+    color: #fff;
+    border-radius: 100%;
+    border: .05rem solid #fc7f0c;
+    background-color: #fc7f0c;
+}
+
+/* ---------------  Statistic section  ------------------  */
+
+.statistic-section{
+    padding: 4rem 0;
+    background-color: #31c2b1;
+}
+
+.statistic-section div[class *="col"]{
+    justify-content: center;
+    display: flex;
+}
+
+.statistic{
+    color: #fff;
+    padding: 0 2.5rem;
+}
+
+.statistic i{
+    font-size: 1.8rem;
+    margin-right: .9rem;
+}
+
+.statistic h1{
+    display: inline-block;
+    font-size: 1.8rem;
+}
+
+.statistic p{
+    font-size: .9rem;
+    letter-spacing: .5rem;
+    color: #fff;
+    display: inline-block;
+}
+
+/* ---------------  Purchase section  ------------------  */
+
+.purchase-section{
+    padding: 11rem 0;
+    background: transparent url('img/pursh.jpg') scroll no-repeat center center;
+    background-size: cover;
+}
+
+.purshase-content{
+    text-align: center;
+    color: #fff;
+}
+
+.purshase-content p{
+    color: #fff;
+}
+
+/* ---------------  Portfolio section  ------------------  */
+
+.portfolio div[class ^= "col-lg"]{
+    padding: 0;
+}
+
+.portfolio-item{
+    position: relative;
+    transition: all .2s ease 0s;
+}
+
+.portfolio-item img{
+    width: 100%;
+}
+
+.portfolio-item .overly{
+     opacity: 0;
+}
+
+.portfolio-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.portfolio-content p{
+    letter-spacing: .7rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .7rem;
+    transform: scale(.6);
+    transition: all .3s ease .1s;
+    opacity: 0;
+}
+
+.portfolio-content h6{
+    color: #fc7f0c;
+    transform: scale(.5);
+    transition: all .3s ease 0s;
+    opacity: 0;
+}
+
+.portfolio-item:hover .portfolio-content p,.portfolio-item:hover .portfolio-content h6{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.portfolio-item:hover >.overly{
+    opacity: 1;
+}
+
+
+/* ---------------  Blog section  ------------------  */
+
+.blog-section ul li{
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-section ul li .overly{
+    opacity: 0;
+    transition: all .4s ease 0s;
+}
+
+.blog-section ul li img{
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: -10rem;
+    width: 100%;
+    opacity: 0;
+    transition: all .4s ease 0s;
+}
+
+.blog-section ul li:hover >img, .blog-section ul li:hover >.overly  {
+    opacity: 1;
+}
+
+.blog-section ul li:hover .post,.blog-section ul li:hover .message p{
+    color: #fff;
+}
+
+.post{
+    z-index: 1;
+}
+
+.post .calendar{
+    background-color: #fc7f0c;
+    color: #fff;
+    display: inline-block;
+    padding: .2rem 1rem;
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+.post .calendar .c-mon{
+    font-size: .7rem;
+    color: #fff;
+    margin:0;
+    
+}
+
+.message p{
+    margin:0;
+    margin-top: .5rem;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: .3rem;
+}
+
+.message h6{
+    font-size: .9rem;
+}
+
+.blog-section .list-group-item i{
+    color: #dbdbdb;
+    z-index: 1;
+}
+
+/* ---------------  Brands section  ------------------  */
+
+.brands-section img{
+    flex: 1;
+    object-fit: contain;
+}
+
+/* ---------------  Map section  ------------------  */
+
+.map-section{
+    padding: 0;
+    overflow: hidden;
+}
+
+.gmap_canvas{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    background: black;
+}
+
+.gmap_canvas iframe{
+    opacity: .5;
+}
+
+.form-back{
+    position: absolute;
+    height: 99%;
+    width: 50%;
+    top:0;
+    right: 0;
+    background: #31c2b1cc;
+}
+
+.map-section .col-lg-6{
+    left: 50%;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+}
+
+.form h3{
+    color: #fff;
+}
+
+.form input, .form textarea{
+    background: transparent;
+    border:none;
+    outline: none;
+    border-bottom: .12rem solid #fff;
+    font-size: .8rem;
+    resize: none;
+    width: 100%;
+    padding-bottom: .8rem; 
+}
+
+.form input::placeholder,.form textarea::placeholder{
+    color: #fff;
+}
+
+/* ---------------  network section  ------------------  */
+
+.network-section{
+    background-color: #373737;
+    padding: 0;
+}
+
+.network{
+    padding: 0;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    list-style: none;
+}
+
+.network li{
+    flex: 1;
+    color: #fff;
+    background-color: #373737;
+    padding: 3.5rem 0;
+    border-left: .1rem solid #333333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease 0s;
+}
+
+.network li:last-child{
+    border-right: .1rem solid #333333;
+}
+
+.network li a{
+    color: #c0c0c0;
+    letter-spacing: .3rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.network .circle-icon{
+    padding: 1rem;
+    border-color: rgb(104, 104, 104);
+    margin-right: 1rem;
+}
+
+.network .circle-icon i{
+    font-size: 1rem
+}
+
+.network li:hover >.circle-icon, .network li:hover>a{
+    border-color: #fff;
+    color: #fff;
+}
+
+.network li:nth-child(1):hover{
+    background-color: #3b5998;
+}
+.network li:nth-child(2):hover{
+    background-color: #55ACEE;
+}
+.network li:nth-child(3):hover{
+    background-color: #A9C74D;
+}
+.network li:nth-child(4):hover{
+    background-color: #F85F8A;
+}
+.network li:nth-child(5):hover{
+    background-color: #005CFF;
+}
+
+/* ---------------  footer  ------------------  */
+
+footer{
+    background: #343434;
+    padding: 5.9rem 0 1.5rem 0;
+}
+
+footer ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+footer ul li{
+    color: #6F6F6F;
+    padding: .5rem 0;
+    font-size: .8rem;
+    text-transform: capitalize;
+}
+
+footer ul li a{
+    color: #6F6F6F;
+    transition: all .3s ease 0s;
+}
+
+footer ul li i{
+    color: #444444;
+    margin-right: 1rem;
+}
+
+footer h6{
+    color: #fff;
+}
+
+footer h5{
+    color: #444444;
+    font-size: .9rem;
+}
+
+footer img{
+    margin-bottom: .3rem;
+}
+
+footer .copyright{
+    border-top: .05rem solid #444444;
+    text-align: center;
+}
